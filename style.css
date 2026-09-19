@@ -1,0 +1,276 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: red;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px gray;
+}
+header h1{
+    color: white;
+    font-size: 24px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+}
+nav a:hover{
+    background-color: darkred;
+    transform: translateY(-2px);
+}
+nav a.active{
+    background-color: white;
+    color: red;
+    box-shadow: 0 2px 5px gray;
+}
+section{
+    scroll-margin-top: 70px;
+}
+#about{
+    padding: 80px 40px;
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.info{
+    max-width: 500px;
+}
+.greeting{
+    font-size: 16px;
+    font-weight: bold;
+    color: crimson;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.info h2{
+    font-size: 36px;
+    color: black;
+    margin-bottom: 15px;
+}
+.info p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: darkslategray;
+    margin-bottom: 15px;
+}
+.extra-info{
+    display: none;
+    background-color: floralwhite;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid red;
+    margin-bottom: 15px;
+}
+.extra-info p{
+    font-size: 16px;
+    margin-bottom: 0;
+    color: darkslategray;
+}
+.about-actions{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+#about-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#about-btn:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+}
+#contact-btn{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#contact-btn:hover{
+    background-color: red;
+    color: white;
+}
+.profile-picture img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 4px 4px 15px gray;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.profile-picture img:hover{
+    transform: scale(1.05);
+    box-shadow: 6px 6px 20px dimgray;
+}
+#projects{
+    padding: 50px 20px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+#projects h2{
+    font-size: 32px;
+    color: black;
+}
+.project-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 12px dimgray;
+}
+.card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: lightgray;
+}
+.card h3{
+    color: black;
+}
+.card p{
+    color: dimgray;
+    font-size: 14px;
+}
+.card a{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.card a:hover{
+    background-color: darkred;
+}
+
+#contact{
+    padding: 60px 20px;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+#contact h2{
+    font-size: 32px;
+    color: black;
+}
+.contact-card{
+    background-color: white;
+    padding: 35px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+}
+.contact-card:hover{
+    box-shadow: 4px 4px 14px dimgray;
+    transform: translateY(-3px);
+}
+.contact-intro{
+    color: darkslategray;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: darkslategray;
+    font-size: 15px;
+}
+.contact-details a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-details a:hover{
+    text-decoration: underline;
+}
+.contact-mail-btn{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.contact-mail-btn:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+footer{
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
