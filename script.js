@@ -1,4 +1,3 @@
-// Wait for the HTML document to fully load
 document.addEventListener("DOMContentLoaded", function () {
 
     // 1. Dynamic Greeting based on current time
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
         greetingElement.textContent = greetingMessage;
     }
 
-    // 2. "Show More / Show Less" toggle in the About section
     const aboutBtn = document.getElementById("about-btn");
     const extraInfo = document.getElementById("extra-info");
 
@@ -34,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // 3. Contact Me button smooth scroll
     const contactBtn = document.getElementById("contact-btn");
     if (contactBtn) {
         contactBtn.addEventListener("click", function () {
@@ -45,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // 4. Click interaction on Profile Picture
     const profileImg = document.getElementById("profile-img");
     if (profileImg) {
         profileImg.addEventListener("click", function () {
@@ -53,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // 5. Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll("nav a");
     navLinks.forEach(function (link) {
         link.addEventListener("click", function (event) {
@@ -68,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // 6. Navigation tracking on scroll (ScrollSpy - active link effect)
     const sections = document.querySelectorAll("section");
     const header = document.querySelector("header");
 
@@ -91,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Simple header effect on scroll
         if (header) {
             if (window.scrollY > 30) {
                 header.style.boxShadow = "0 4px 12px darkred";
