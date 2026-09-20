@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // 1. Dynamic Greeting based on current time
     const greetingElement = document.getElementById("greeting");
     if (greetingElement) {
         const currentHour = new Date().getHours();
